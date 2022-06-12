@@ -1,6 +1,5 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-// import HelloWorld from '@/components/HelloWorld.vue'
 </script>
 
 <template>
@@ -12,7 +11,7 @@ import { RouterLink, RouterView } from 'vue-router'
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About me</RouterLink>
         <RouterLink to="/portfolio">Portfolio</RouterLink>
-        <RouterLink to="/contact">Contac me</RouterLink>
+        <RouterLink to="/contact">Contact me</RouterLink>
       </nav>
     </div>
   </header>
@@ -24,22 +23,19 @@ import { RouterLink, RouterView } from 'vue-router'
 @import '@/assets/base.scss';
 
 #app {
-  max-width: 1280px;
+  max-width: 800px;
   margin: 0 auto;
   padding: 2rem;
 
   font-weight: normal;
+
+  header {
+    line-height: 1.5;
+    max-height: 100vh;
+  }
 }
 
-header {
-  line-height: 1.5;
-  max-height: 100vh;
-}
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
 
 a,
 .green {
@@ -79,7 +75,7 @@ nav a:first-of-type {
   border: 0;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 800px) {
   body {
     display: flex;
     place-items: center;
