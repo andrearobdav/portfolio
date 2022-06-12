@@ -16,100 +16,73 @@ import { RouterLink, RouterView } from 'vue-router'
     </div>
   </header>
 
+
   <RouterView />
+
+
 </template>
 
 <style lang="scss">
 @import '@/assets/base.scss';
 
 #app {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 2rem;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Exo 2', sans-serif;
+  background-color: var(--bg-color);
+  background-image: var(--bg-gradient);
+  width: 100vw;
+  height: 100vh;
 
-  font-weight: normal;
 
   header {
     line-height: 1.5;
-    max-height: 100vh;
+    // max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    nav {
+      width: 100%;
+      font-size: 1rem;
+      text-align: center;
+      margin-top: 2rem;
+
+    }
+
+    nav a.router-link-exact-active {
+      color: var(--third-color);
+    }
+
+    nav a.router-link-exact-active:hover {
+      background-color: var(--third-color);
+    }
+
+
+    nav a {
+      // display: inline-block;
+      padding: 0 1rem;
+      border-left: 1px solid var(--color-border);
+      color: var(--secondary-color);
+      text-decoration: none;
+    }
+
+    nav a:first-of-type {
+      border: 0;
+    }
   }
-}
 
-
-
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-}
-
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
-}
-
-nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
-}
-
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
-
-nav a:first-of-type {
-  border: 0;
-}
-
-@media (min-width: 800px) {
   body {
     display: flex;
-    place-items: center;
-  }
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--bg-color);
+    background-image: var(--bg-gradient);
+    width: 100vw;
+    height: 100vh;
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
-
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
   }
 }
 </style>
