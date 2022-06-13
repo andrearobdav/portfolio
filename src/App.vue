@@ -73,8 +73,6 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 4rem;
-        height: 4rem;
         outline: none;
         border: none;
         background-color: transparent;
