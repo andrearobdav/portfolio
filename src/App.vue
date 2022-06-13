@@ -6,13 +6,15 @@ import { RouterLink, RouterView } from 'vue-router'
   <header>
 
     <div class="wrapper">
-
       <nav>
-        <RouterLink to="/"> <img src="" alt="" class="nav-icon home">
-          Home</RouterLink>
-        <RouterLink to="/about"><img src="" alt="" class="nav-icon about">About me</RouterLink>
-        <RouterLink to="/portfolio"><img src="" alt="" class="nav-icon portfolio">Portfolio</RouterLink>
-        <RouterLink to="/contact"><img src="" alt="" class="nav-icon contact">Contact me</RouterLink>
+        <img class="menu-icon" src="@/assets/svg/burger-icon.svg" alt="" />
+        <div class="dropdown">
+          <RouterLink to="/"> <img src="" alt="" class="nav-icon home">
+            Home</RouterLink>
+          <RouterLink to="/about"><img src="" alt="" class="nav-icon about">About me</RouterLink>
+          <RouterLink to="/portfolio"><img src="" alt="" class="nav-icon portfolio">Portfolio</RouterLink>
+          <RouterLink to="/contact"><img src="" alt="" class="nav-icon contact">Contact me</RouterLink>
+        </div>
       </nav>
     </div>
   </header>
@@ -49,6 +51,7 @@ body {
 
       .wrapper {
 
+
         nav {
           width: 100%;
           font-size: 1rem;
@@ -57,6 +60,20 @@ body {
           display: flex;
           align-items: center;
           justify-content: center;
+
+          .menu-icon {
+            width: 2.5rem;
+            height: 2.5rem;
+          }
+
+          .dropdown {
+            background-color: var(--secondary-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+          }
 
         }
 
@@ -73,7 +90,7 @@ body {
           // display: inline-block;
           // padding: 0 1rem;
           // border-left: 1px solid var(--color-border);
-          color: var(--secondary-color);
+          color: var(--dark-color);
           text-decoration: none;
         }
 
