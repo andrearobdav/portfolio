@@ -68,28 +68,34 @@ body {
       //   display: flex;
       //   align-items: center;
       //   justify-content: center;
-
-      .toggle-prof {
+      & nav {
         display: flex;
         align-items: center;
         justify-content: center;
-        outline: none;
-        border: none;
-        background-color: transparent;
+        height: 5rem;
 
-        .menu-icon {
-          width: 2.5rem;
-          height: 2.5rem;
+        .toggle-prof {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          outline: none;
+          border: none;
+          background-color: transparent;
+
+          .menu-icon {
+            width: 2.5rem;
+            height: 2.5rem;
+          }
         }
-      }
 
-      .dropdown-content {
-        display: none;
-
-        .router-link {
+        .dropdown-content {
           display: none;
-        }
 
+          .router-link {
+            display: none;
+          }
+
+        }
       }
 
       & .best-dropdown {
@@ -107,7 +113,6 @@ body {
           justify-content: center;
           width: 4rem;
           height: 4rem;
-          margin-top: 20rem;
           outline: none;
           border: none;
 
@@ -119,11 +124,11 @@ body {
 
         .dropdown-content {
           display: block;
-          position: fixed;
+          position: relative;
           display: flex;
           flex-direction: column;
           justify-content: space-around;
-          align-items: flex-start;
+          align-items: center;
           background-color: white;
           box-shadow: 2px 2px 15px 5px rgba(0, 0, 0, 0.2);
           -webkit-box-shadow: 2px 2px 15px 5px rgba(0, 0, 0, 0.2);
