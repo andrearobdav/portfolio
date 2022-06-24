@@ -72,7 +72,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 5rem;
+        height: 7rem;
 
         .toggle-prof {
           display: flex;
@@ -130,7 +130,7 @@ body {
           border-radius: 5px;
           box-shadow: 2px 2px 15px 5px rgba(0, 0, 0, 0.2);
           -webkit-box-shadow: 2px 2px 15px 5px rgba(0, 0, 0, 0.2);
-          top: 5rem;
+          top: 6rem;
           width: 14rem;
           height: 12rem;
           padding: 1rem;
@@ -152,7 +152,8 @@ body {
       }
 
       nav a.router-link-exact-active {
-        color: var(--third-color);
+        color: var(--figures-color);
+        font-size: 1.2rem;
       }
 
       // nav a.router-link-exact-active:hover {
@@ -163,6 +164,7 @@ body {
       nav a {
         color: var(--dark-color);
         text-decoration: none;
+        font-size: 1.2rem;
       }
 
       // nav a:first-of-type {

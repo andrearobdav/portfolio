@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <h1 class="hello">Hola, soy Andrea Robles :)</h1>
-    <h2 class="hello">Front End Web Developer</h2>
+    <h2 class="front">Front End Web Developer</h2>
   </div>
 </template>
 
@@ -13,7 +13,7 @@ main {
     align-items: center;
     justify-content: center;
     width: 100vw;
-    height: 80vh;
+    height: 70vh;
 
 
     h1 {
