@@ -102,7 +102,6 @@ body {
         width: 100%;
         font-size: 1rem;
         text-align: center;
-        margin-top: 2rem;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -111,8 +110,6 @@ body {
           display: flex;
           align-items: center;
           justify-content: center;
-          width: 4rem;
-          height: 4rem;
           outline: none;
           border: none;
 
@@ -124,14 +121,16 @@ body {
 
         .dropdown-content {
           display: block;
-          position: relative;
+          position: fixed;
           display: flex;
           flex-direction: column;
           justify-content: space-around;
           align-items: center;
           background-color: white;
+          border-radius: 5px;
           box-shadow: 2px 2px 15px 5px rgba(0, 0, 0, 0.2);
           -webkit-box-shadow: 2px 2px 15px 5px rgba(0, 0, 0, 0.2);
+          top: 5rem;
           width: 14rem;
           height: 12rem;
           padding: 1rem;
